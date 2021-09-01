@@ -1,0 +1,16 @@
+{
+  "name": "packagemanagerpractice",
+  "version": "1.0.0",
+  "description": "practicing package manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jovana",
+  "license": "ISC",
+  "dependencies": {
+    "funny-words": "^0.1.2",
+    "one-liner-joke": "^1.2.2",
+    "random-words": "^1.1.1"
+  }
+}

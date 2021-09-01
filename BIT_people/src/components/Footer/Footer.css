@@ -1,0 +1,18 @@
+
+footer{
+    background-color: #EC6F75;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+}
+footer p{
+    color:white;
+    font-size: 12px;
+    flex-grow: 1;
+}
+footer .counterDiv{
+    text-align: right;
+    padding-right:3px;
+}

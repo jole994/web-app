@@ -1,0 +1,24 @@
+.singleElUserList{
+    background-color: rgb(235, 250, 244);
+    border-radius: 3px;
+    display: flex;
+    margin: 15px 12%;
+    padding: 3px 2%;
+    flex-grow: 1;
+    box-shadow: 0px 2px 0px rgb(181, 186, 192);
+}
+.singleElUserList img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+.singleElUserList .info{
+    margin-left: 9px;
+}
+.singleElUserList span{
+    color:black;
+}
+.red{
+    background-color: #FEEBEE;
+}

@@ -1,0 +1,27 @@
+
+.containerMain{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+.noMatchFound{
+    padding:8% 0px;
+}
+.noMatchFound *{
+    width:40%;
+    margin:0px 30%;
+    color:rgb(160, 160, 160);
+    font-size: xx-large;
+    text-align: center;
+}
+.noMatchFound span{
+    font-size: 60px;
+}
+.countingGender{
+    text-align: right;
+    padding:1px 11%;
+    width:100%;
+    flex-shrink: 1;
+}
