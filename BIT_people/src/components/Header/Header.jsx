@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
 import { UserService } from '../services/UserService';
+import { HashRouter as Router, Link } from 'react-router-dom';
 
-
-const Header=({setSwitch, switchState, setUsers, setIsLoading})=>{
+const Header=({setSwitch, switchState, setUsers, setIsLoading,hideButtons})=>{
     const onClick = () => setSwitch(!switchState);
 
     function refresh(){
@@ -46,13 +46,29 @@ const Header=({setSwitch, switchState, setUsers, setIsLoading})=>{
     
     
     return(
-        <nav >
-            <h1>React Users</h1>
+        // <nav >
+        //     <h1>React Users</h1>
 
+        //     <button className="switchButton" onClick={onClick} >
+        //          {switchState ? <span className="material-icons">view_module</span> : <span className="material-icons">view_list</span>}
+        //     </button>
+        //     <button className="refreshButton" onClick={refresh} ><span className="material-icons">refresh</span></button>
+        // </nav>
+        <nav >
+            <Router>
+                <h1><Link to="/">Bit People</Link></h1>
+            </Router>
+<div className={hideButtons ? "hidden" : "shown"}  >
+            <Router>
+                <button><Link to="/about">About</Link></button>
+            </Router>
             <button className="switchButton" onClick={onClick} >
-                 {switchState ? <span className="material-icons">view_module</span> : <span className="material-icons">view_list</span>}
+                {switchState ? <span class="material-icons">view_module</span> : <span className="material-icons">view_list</span>}
             </button>
-            <button className="refreshButton" onClick={refresh} ><span className="material-icons">refresh</span></button>
+            <button id="refresh" className="refreshButton" onClick={refresh} ><span className="material-icons">refresh</span></button>
+            {/* <button className="switchButton" onClick={onClick} >{ switchState ? <img alt="dugme" src='./gridDugme.png'/> : <img alt="dugme" src='./listaDugme.png' /> }</button>
+           <button className="refreshButton" onClick={refresh} >REFRESH</button> */}
+</div>
         </nav>
     )
 }

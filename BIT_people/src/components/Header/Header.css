@@ -32,3 +32,9 @@ nav button:hover{
 span{
     color:white;
 }
+.hidden{
+    display: none;
+}
+.shown{
+    display: block;
+}
